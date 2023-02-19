@@ -45,4 +45,16 @@ class Form extends React.Component {
     }
 }
 
-root.render(<Form/>);
+class ShowAll extends React.Component {
+    render() {
+        return (
+            <React.Fragment>
+                <Form/>
+                <div className={"card"} id={"list"}>
+                </div>
+            </React.Fragment>
+        )
+    }
+}
+
+root.render(<ShowAll/>);
